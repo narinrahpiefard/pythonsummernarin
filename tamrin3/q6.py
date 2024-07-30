@@ -1,11 +1,8 @@
-a=eval(input("enter a number: "))
-b=eval(input("enter a number: "))
-c=eval(input("enter a number: "))
-d=eval(input("enter a number: "))
-e=eval(input("enter a number: "))
-f=a+b+c+d+e
-if f/2==0:
-    g=eval(input("enter new number: "))
-    print(a+b+c+d+e+g)
-elif f/2!=0:
-    print(a,b,d,e)
+numbers=input("enter 5 numbers: ").split(",")
+number_list=list(map(int,numbers))
+number_sum=sum(number_list)
+if number_sum%2==0:
+    number2=eval(input("enter your new number: "))
+    print(number_sum+number2)
+else:
+    print(numbers[0],numbers[1],numbers[3],numbers[4])
