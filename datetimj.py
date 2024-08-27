@@ -1,0 +1,11 @@
+import jdatetime
+print(jdatetime.datetime.now())
+now = jdatetime.datetime.now()
+date = jdatetime.date.today()
+print(date.weekday())
+print(date.day)
+print(date.month)
+print(date.year)
+print(now.hour)
+print(now.minute)
+print(now.second)
